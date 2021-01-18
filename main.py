@@ -1,9 +1,10 @@
-import random
+# import random another choice but it will bring all random library
+from random import randint
 from art import logo
 
 print(logo)
-number=random.choice(range(100))
-
+# number=random.choice(range(100)) we use this if we use random library instead of importing randint from random
+number=randint(1,100)
 
 def start_the_game(difficulty_range):
   tries=difficulty_range
